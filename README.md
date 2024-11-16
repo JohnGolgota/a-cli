@@ -4,5 +4,16 @@ Supuesta intalacion:
 
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-Invoke-RestMethod -Uri https://github.com/JohnGolgota/a-cli/blob/8196471aca365ff02490f4de0ed4871facdff1c4/download.ps1 | Invoke-Expression
+Invoke-RestMethod -Uri "https://raw.githubusercontent.com/JohnGolgota/a-cli/refs/heads/master/download.ps1" | Invoke-Expression
+```
+
+## install
+
+```powershell
+~/a-cli/install.ps1
+. $PROFILE
+```
+
+```powershell
+Test-ACliDependencies
 ```
